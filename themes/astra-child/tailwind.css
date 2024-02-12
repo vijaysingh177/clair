@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+body{
+  font-family: "Raleway", sans-serif;
+  color: #000;
+}
+h1,h2,h3,h4,.font-michroma{
+  font-family: "Michroma", sans-serif;
+}
+.btn-arrow a{
+  background-image: url(./assets/images/claire_button-arrow.svg);
+}
+.navbar li:nth-child(3):before,
+.navbar li:nth-child(4):before,
+.navbar li:nth-child(2):before {
+  content: url(./assets/images/claire_ecllipse.svg);
+  position: absolute;
+  left: -23px;
+  color: #000;
+  font-size: 20px;
+  top: -6px;
+}
+.transform-middle{
+  transform: translate(-50%,-50%);
+}
+.claire-service-small .swiper-slide-thumb-active{
+  border: 2px solid #000;
+ 
+}
+.claire-project .swiper-button-prev:after,
+.claire-project .swiper-button-next:after{
+  content: "";
+}
+.claire-service-small .swiper-pagination-lock{
+  display: block;
+}
+
+.container{
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+body.open .navigation-menu__overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.navigation-menu__labels {
+  transition: translate 0.3s;
+  translate: -100% 0;
+}
+body.open .navigation-menu__labels {
+  translate: 0 0;
+  visibility: visible;
+  transition: translate 0.3s;
+}
+.claire-project span.swiper-pagination-bullet,
+.claire_team span.swiper-pagination-bullet {
+  background-color: #6D6D6D !important;
+  height: 4px;
+  width:50px;
+  border-radius: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+ 
+ @media screen and (max-width:1276px){
+  .navbar li:nth-child(3):before,
+  .navbar li:nth-child(4):before,
+  .navbar li:nth-child(2):before {
+    content: "";
+    
+  }
+   
+ 
+  
+ 
+ }
+    
+
+
+
+
+ @media screen and (max-width:1080px){
+
+  .claire-project span.swiper-pagination-bullet,
+  .claire_team span.swiper-pagination-bullet {
+    width:30px;
+  }
+
+
+ }
+ 
+
+
+ @media screen and (max-width:767px){
+
+ }
+
+
+
